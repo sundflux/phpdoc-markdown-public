@@ -1,3 +1,15 @@
+Note:
+
+This is fork of
+
+```
+cvuorinen/phpdoc-markdown-public
+```
+
+with goal of maintaining PHP 7.2 support for Webvaloa packages documentation.
+
+This package may or may not be deprecated later if original project fixes compability issues.
+
 # phpDocumentor markdown-public template
 
 [phpDocumentor template](http://www.phpdoc.org/docs/latest/getting-started/changing-the-look-and-feel.html) that generates Markdown documentation of only the public API. It will skip all abstract classes and non-public methods.
@@ -13,17 +25,17 @@ Example of documentation generated with this template: https://github.com/cvuori
 Install with composer:
 
 ```bash
-composer require cvuorinen/phpdoc-markdown-public
+composer require sundflux/phpdoc-markdown-public
 ```
 
 ## Usage
 
-Run phpDocumentor and set template as `vendor/cvuorinen/phpdoc-markdown-public/data/templates/markdown-public`.
+Run phpDocumentor and set template as `vendor/sundflux/phpdoc-markdown-public/data/templates/markdown-public`.
 
 **Example using command-line arguments:**
 
 ```bash
-./vendor/bin/phpdoc --directory=src/ --target=docs/ --template="vendor/cvuorinen/phpdoc-markdown-public/data/templates/markdown-public" --title="My Project Documentation"
+./vendor/bin/phpdoc --directory=src/ --target=docs/ --template="vendor/sundflux/phpdoc-markdown-public/data/templates/markdown-public" --title="My Project Documentation"
 ```
 
 More information about the available arguments can be found at [running phpDocumentor](http://www.phpdoc.org/docs/latest/guides/running-phpdocumentor.html).
@@ -43,7 +55,7 @@ Add a file called `phpdoc.xml` with the following content to the root of your pr
         <target>docs</target>
     </transformer>
     <transformations>
-        <template name="vendor/cvuorinen/phpdoc-markdown-public/data/templates/markdown-public" />
+        <template name="vendor/sundflux/phpdoc-markdown-public/data/templates/markdown-public" />
     </transformations>
     <files>
         <directory>src</directory>

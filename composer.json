@@ -1,21 +1,25 @@
 {
-    "name": "cvuorinen/phpdoc-markdown-public",
+    "name": "sundflux/phpdoc-markdown-public",
     "description": "phpDocumentor template that generates Markdown documentation of the public API",
     "keywords" : [ "PHPDoc", "phpDocumentor", "Documentation", "Markdown" ],
-    "homepage" : "https://github.com/cvuorinen/phpdoc-markdown-public",
+    "homepage" : "https://github.com/sundflux/phpdoc-markdown-public",
     "license": "MIT",
     "authors": [
         {
             "name": "Carl Vuorinen",
             "email": "carl.vuorinen@gmail.com"
+        },	
+        {
+            "name": "Tarmo Alexander Sundström",
+            "email": "ta@sundstrom.io"
         }
     ],
     "require": {
-        "phpdocumentor/phpdocumentor": "~2.8"
+        "phpdocumentor/phpdocumentor": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Cvuorinen\\PhpdocMarkdownPublic\\": "src"
+            "Sundflux\\PhpdocMarkdownPublic\\": "src"
         }
     }
 }
